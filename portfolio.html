@@ -1,0 +1,788 @@
+YPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Harmain - Portfolio</title>
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+      
+
+        body {
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ebebeb;
+            padding-top: 70px; /* Space for fixed navbar */
+        }
+
+        /* Header Section */
+      
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #000; /* Solid background color */
+            position: fixed; /* Fixes the navbar at the top */
+            width: 100%; /* Full width */
+            top: 0; /* Aligns it to the top */
+            z-index: 1000; /* Ensures it stays above other content */
+        }
+
+        nav .logo h1 {
+            font-size: 2rem;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav .logo h1:hover {
+            color: #ffff00;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav .nav-links a:hover {
+            color: #ffff00;
+        }
+
+        /* Social Media Icons in Header */
+        nav .social-icons-header {
+            display: flex;
+        }
+
+        nav .social-icons-header a {
+            margin-left: 15px;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav .social-icons-header a:hover {
+            color: #ffff00;
+        }
+
+        /* Hero Section */
+       /* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5%; /* Adjusted padding */
+  height: 100vh;
+  background-color: black;
+  gap: 10px;
+}
+.left-content {
+  flex: 1;
+  padding-right: 10px;
+}
+.right-content {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+.left-content h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.developer {
+  display: inline-block;
+}
+.animated-text {
+  display: inline-block;
+}
+.animated-text span {
+  display: inline-block; /* Each letter behaves as a block for animation */
+  color: #ffff00;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  opacity: 0; /* Start as invisible */
+  transform: translateX(-20px); /* Start slightly off to the left */
+  animation: slide-in-out 4s infinite; /* Continuous animation */
+}
+@keyframes slide-in-out {
+  0% {
+    opacity: 0; /* Start invisible */
+    transform: translateX(-20px); /* Start off-screen left */
+  }
+  20% {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Move to original position */
+  }
+  80% {
+    opacity: 1; /* Keep visible */
+    transform: translateX(0); /* Stay in original position */
+  }
+  100% {
+    opacity: 0; /* Fade out */
+    transform: translateX(-20px); /* Move off-screen left */
+  }
+}
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animated-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animated-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animated-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.animated-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.animated-text span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.animated-text span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.animated-text span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.animated-text span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.animated-text span:nth-child(11) {
+  animation-delay: 1s;
+}
+.animated-text span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.animated-text span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+.animated-text span:nth-child(14) {
+  animation-delay: 1.3s;
+}
+.animated-text span:nth-child(15) {
+  animation-delay: 1.4s;
+}
+.animated-text span:nth-child(16) {
+  animation-delay: 1.5s;
+}
+.animated-text span:nth-child(17) {
+  animation-delay: 1.6s;
+}
+.animated-text span:nth-child(18) {
+  animation-delay: 1.7s;
+}
+
+        /* Moving Banner Section */
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(51, 47, 47, 0.6);
+        }
+
+        .banner-text {
+            display: inline-block;
+            white-space: nowrap;
+            color: #ffff00;
+            font-size: 1.5rem;
+            padding: 1rem;
+            animation: marquee 15s linear infinite;
+        }
+
+        .banner-text i {
+            margin-right: 15px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Body Sections */
+        section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .profile-pic {
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Auto height */
+  max-width: 400px; /* Max width to maintain size */
+  border-radius: 40%;
+  transition: transform 0.5s;
+}
+.profile-pic:hover {
+  transform: rotateY(360deg);
+}
+        /* About Section */
+        .about {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 5%; /* Adjusted padding */
+  text-align: center;
+}
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
+#about h2:hover {
+            color:#fbff00;
+        }
+
+
+     
+        /* Skills Section */
+        .skill h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+#skill h2:hover {
+      color:#fbff00;
+        }
+
+        .skills {
+  padding: 50px 5%; /* Adjusted padding */
+}
+.skill-bar {
+  margin-bottom: 20px;
+}
+.bar {
+  background-color: rgb(255, 255, 255);
+  height: 25px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+.html-bar,
+.css-bar,
+.ts-bar,
+.js-bar {
+  height: 100%;
+  background-color: #ffff00;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.html-bar {
+  width: 90%;
+}
+.css-bar {
+  width: 60%;
+}
+.ts-bar{
+  width: 90%
+}
+.js-bar {
+  width: 60%;
+}
+/* Styling for the horizontal line after each section */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #ccc,
+    rgba(0, 0, 0, 0)
+  ); /* Gradient for blurry effect */
+  margin: 40px 0; /* Add space above and below the line */
+}
+
+
+   /* Projects Section */
+   .project-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5%; /* Added padding for consistency */
+}
+.project {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  height: 300px;
+  background-color: #242424;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+.project:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+.project-overlay {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Default state of project image (hidden) */
+.project-img {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px; /* Rounded corners for image */
+}
+
+/* Show image on hover */
+.project:hover .project-img {
+  display: block;
+}
+
+/* Animation for smoother image reveal */
+.project-img {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.project:hover .project-img {
+  opacity: 1;
+}
+
+/* General styling for the projects title */
+.projects h2 {
+  font-size: 28px;
+  color: #fffffff1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ /* Timeline for Education Section */
+ .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .timeline h2 {
+  font-size: 32px;
+  
+  color: #fdf901;
+}
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #242424;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: rgb(75, 69, 69);
+            border: 4px solid #fcec0b;
+            top: 15px;
+            right: -17px;
+            border-radius: 50%;
+        }
+        .left::after {
+            right: -16px;
+        }
+        .timeline-content {
+            background-color: rgb(39, 38, 38);
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .content h2 {
+            font-size: 1.5rem;
+            color: yellow
+        }
+/*experience*/
+        #projects {
+            background-color: #000000;
+            color: #f7f2f2;
+        }
+
+        #projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        #projects h2:hover {
+            color: #ffe600;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #272525;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            font-size: 1.2rem;
+            text-align: center; /* Center text */
+        }
+        
+        /* Social Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #f8ffff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #242424;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        /* Contact Section */
+        #contact {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        #contact h2:hover {
+            color:#fbff00;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222121;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #fbff00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons-header">
+                
+                <a href="https://www.linkedin.com/in/harmain-bashir-4560b42b5/"target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/harmainbashir15" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </nav>
+
+        <!-- Moving Banner Below Nav Links -->
+        <div class="banner-container">
+            <div class="banner-text">
+                <i class="fas fa-comments"></i> Welcome to our website &nbsp;&nbsp; | &nbsp;&nbsp; <i class="fab fa-whatsapp"></i> Contact me on WhatsApp at +92117539555
+            </div>
+        </div>
+
+        <section id="home" class="hero">
+            <div class="left-content">
+                <h1>HELLO, I AM HARMAIN BASHIR</h1>
+                <p class="developer">
+                    I AM A 
+                    <span class="animated-text">
+                        <span>W</span>
+                        <span>E</span>
+                        <span>B</span>
+                        <span></span>
+                        <span>F</span>
+                        <span>R</span>
+                        <span>O</span>
+                        <span>N</span>
+                        <span>T</span>
+                        <span>E</span>
+                        <span>N</span>
+                        <span>D</span>
+                        <span> </span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>V</span>
+                        <span>E</span>
+                        <span>L</span>
+                        <span>O</span>
+                        <span>P</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span></span>
+                     
+                       
+                    </span>
+                </p>
+            </div>
+            <div class="right-content">
+                <img src="https://avatars.githubusercontent.com/u/162583900?v=4" alt="Profile Picture" class="profile-pic">
+            </div>
+    </header>
+    
+</div>
+
+</section>
+<hr>
+<!-- About Me Section -->
+<section id="about" class="about">
+<h2>About Me</h2>
+<p>
+    Hello, I'm Harmain Bashir, a passionate Web Frontend Developer with expertise in creating responsive and visually appealing websites. 
+    I specialize in HTML, CSS, JavaScript, and TypeScript to build dynamic and interactive user interfaces. 
+    My goal is to deliver high-quality web experiences that are both functional and aesthetic. 
+    I'm constantly learning and exploring new technologies to stay at the forefront of web development.
+</p>
+</section>
+
+<hr>
+
+
+
+
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h1>Skills</h1>
+        <div class="skill-bar">
+            <p>HTML - 90%</p>
+            <div class="bar">
+                <div class="html-bar"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>CSS - 60%</p>
+            <div class="bar">
+                <div class="css-bar"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+          <p>TypeScript- 90%</p>
+          <div class="bar">
+              <div class="ts-bar"></div>
+          </div>
+        <div class="skill-bar">
+            <p>JavaScript - 60%</p>
+            <div class="bar">
+                <div class="js-bar"></div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+
+
+
+      <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+        <a href="https://currency-converter-by-html-css-and-typescript.vercel.app/" class="project" target="_blank">
+            <div class="project-overlay">
+                <p>Project 1 Description: currency-converter-by-html-css-and-typescript</p>
+                <!-- Hidden image -->
+                <img src="https://e7.pngegg.com/pngimages/372/192/png-clipart-commonwealth-bank-currency-converter-foreign-exchange-market-exchange-rate-bank-text-logo-thumbnail.png" alt="Project 1 Image" class="project-img">
+            </div>
+            Project 1
+        </a>
+        <a href="https://milestone5-beta-fawn.vercel.app/" class="project" target="_blank">
+            <div class="project-overlay">
+                <p>Project 2 Description: "A shareable resume builder is a tool for creating and customizing professional resumes with user-friendly templates." </p>
+                " </p>
+
+
+
+
+
+
+
+                <img src="https://piktochart.com/wp-content/uploads/2022/08/it-professional_2524.jpg" alt="Project 2 Image" class="project-img">
+            </div>
+            Project 2
+        </a>
+       
+    </div>
+ 
+
+
+
+
+
+
+</section>
+<hr>
+    </section>
+
+    <!-- Education Section -->
+<section id="education">
+    <h1>Education</h1>
+    <div class="timeline">
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h1>Governor Sindh IT Initiative</h1>
+                <p>Artificial Intelligence, Web 3.0 & Metaverse</p>
+                <p><b><mark>January 2024 -On going </mark></b></p>
+                <p>I'm currently expanding my knowledge in Generative AI, Exploring advance machine learning techniques <br>to create models capable of generating new data, images and text. <br>My focous is on understanding and applying<br> state-of-the-art generative Algorithms to drive innovation in AI-driven solutions.</p>
+            </div>
+        </div>
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h1>The MAK College</h1>
+                <p>Intermediate in Medical</p>
+                <p><b><mark>March 2020 - June 2022</mark> </b></p>
+                <p>I have successfully completed my intermediate education in medical, achieving A grade with 94%.</p>
+            </div>
+          </div>
+
+
+</section>
+
+
+<!--Experience-->
+<div></div>
+  <section id= "experience">
+    <h1>Experience</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        
+          <p>Seeking Opportunity as a Fresh Candidate to Start My Professional Career.</p>
+      </div>
+  </section>
+<hr>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: abc123@gmail.com  <br>Phone: +92117539555</p>
+           
+        </div>
+    </section>
+
+ <hr>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; HARMAIN.com 2024 | All Right Reserved, Terms of Use - Privacy Policy</p>
+        <div class="social-icons">
+          <a href="http://127.0.0.1:5501/app.html#home" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/harmain-bashir-4560b42b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="http://127.0.0.1:5501/app.html#home" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </footer>
+
+
+    <script>
+        // JavaScript for About Me paragraph transition
+        window.addEventListener('DOMContentLoaded', () => {
+            const aboutMeText = document.getElementById('about-me-text');
+            setTimeout(() => {
+                aboutMeText.classList.add('visible');
+            }, 100); // Delay for effect
+        });
+    </script>
+</body>
+</html>
